@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kWuKong_item_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/wukong_item_common_back_shape_rectangle"
+        >
+
+
+
+        <TextView
+            android:id="@+id/wukongItemNumberTextView"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+
+            android:text="10"
+            android:textColor="@color/wukong_all_black"
+            android:textSize="28dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+
+            android:maxLines="1"
+
+            android:autoSizeMaxTextSize="28dp"
+            android:autoSizeMinTextSize="2dp"
+            android:autoSizeTextType="uniform"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="2dp"
+            app:autoSizeMaxTextSize="28dp"
+            app:autoSizeStepGranularity="1dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/wukongItemLeftImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_toRightOf="@id/wukongItemNumberTextView"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/wukongItemLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/wukongItemLeftImageView"
+
+            android:text="名字"
+            android:textColor="@color/wukong_all_black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/wukongItemRightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/wukongItemRightImageView"
+            android:layout_marginRight="12dp"
+
+            android:text="大哥"
+            android:textColor="@color/wukong_gray_8f"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/wukongItemRightImageView"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/wukong_icon_arrow"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

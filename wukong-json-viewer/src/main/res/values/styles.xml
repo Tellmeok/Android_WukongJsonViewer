@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- animation 样式 -->
+    <style name="WechatTheme_ToolBarPopupOverlay" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 设置popupMenu背景颜色 -->
+        <item name="android:colorBackground">@color/wukong_gray_line</item>
+        <!-- 设置popupMenu弹出位置不覆盖toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 修改字体大小 -->
+        <item name="android:textSize">15sp</item>
+        <!-- 修改字体颜色 -->
+        <item name="android:textColor">@color/wukong_all_black</item>
+    </style>
+
+    <!-- Action Sheet 进入及退出动画 -->
+    <style name="WechatTheme_ActionSheetStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/wukong_action_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/wukong_action_sheet_leave</item>
+    </style>
+
+
+</resources>

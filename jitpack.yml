@@ -1,0 +1,8 @@
+
+# ----------- Gradle 8.x (8.7), Android Gradle Plugin (AGP) 8.x.x (8.5.0) -----------
+#jdk:
+#  - openjdk17
+
+# ----------- Gradle 7.x (7.5), Android Gradle Plugin (AGP) 7.x.x (7.4.2) -----------
+jdk:
+  - openjdk11

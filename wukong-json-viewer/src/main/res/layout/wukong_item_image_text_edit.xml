@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kWuKong_item_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/wukong_item_common_back_shape_rectangle"
+        >
+
+
+        <ImageView
+            android:id="@+id/wukongItemLeftImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/wukongItemLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/wukongItemLeftImageView"
+
+            android:text="昵称"
+            android:textColor="@color/wukong_all_black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/wukongItemLeftEditText"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+
+            android:layout_centerVertical="true"
+            
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/wukongItemLeftTextView"
+
+            android:gravity="center"
+
+            android:hint="请填写昵称"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

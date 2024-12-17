@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/kWuKong_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wukong_gray_line"
+        app:elevation="1dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/kWuKong_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/WechatTheme_ToolBarPopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/wukong_item_empty_line"
+        android:id="@+id/kWuKong_toolbar_under_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kWuKong_toolbar_layout">
+    </include>
+
+    <ListView
+        android:id="@+id/kWuKong_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:textFilterEnabled="true"
+
+        android:background="@color/wukong_gray"
+
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+
+        android:layout_below="@id/kWuKong_toolbar_under_line"
+        android:scrollbars="none"
+
+        />
+
+</RelativeLayout>

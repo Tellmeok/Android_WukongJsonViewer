@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kWuKong_item_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/wukong_item_common_back_shape_rectangle"
+        >
+
+
+        <TextView
+            android:id="@+id/wukongItemLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+
+            android:text="名字"
+            android:textColor="@color/wukong_all_black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/wukongItemRightImageView"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:src="@mipmap/wukong_icon_arrow"
+            android:layout_marginRight="8dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/wukongSheetTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:textColor="@color/wukong_gray"
+        android:textSize="12dp"
+
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/wukongSheetScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/wukongSheetContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/wukongSheetCancelText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/wukong_action_sheet_cancel_background"
+
+        android:text="取消"
+        android:textSize="18dp"
+        android:textColor="@color/wukong_white"
+        />
+
+</LinearLayout>

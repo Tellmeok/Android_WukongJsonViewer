@@ -1,0 +1,70 @@
+// ----------- Gradle 8.x (8.7), Android Gradle Plugin (AGP) 8.x.x (8.5.0) -----------
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+// ----------- Gradle 7.x (7.5), Android Gradle Plugin (AGP) 7.x.x (7.4.2) -----------
+//plugins {
+//    // alias(libs.plugins.android.application)
+//    alias(libs.plugins.jetbrains.kotlin.android)
+//}
+//apply plugin: 'com.android.application'
+
+// 上面 apply plugin: 'com.android.application' 等价于 plugins { id 'com.android.application' } 两个版本一样的
+
+
+android {
+    namespace 'com.wukong.json.viewer.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.wukong.json.viewer.app"
+        minSdk 19
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildFeatures.viewBinding = true
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8' // 1.8, or 11, or 17,
+    }
+
+    // ----------- Gradle 8.x (8.7), Android Gradle Plugin (AGP) 8.x.x (8.5.0) -----------
+    // ----------- Gradle 7.x (7.5), Android Gradle Plugin (AGP) 7.x.x (7.4.2) -----------
+    // packaging options, 8.x 新增，7.x 不认
+//    packaging {
+//        resources {
+//            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+//        }
+//    }
+
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.appcompat
+    implementation project(':wukong-json-viewer')
+
+}

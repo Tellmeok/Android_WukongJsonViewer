@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kWuKong_item_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+
+        android:background="@drawable/wukong_item_common_back_shape_rectangle"
+        >
+
+        <TextView
+            android:id="@+id/wukongItemLeftDetailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+
+            android:text="生于2008年8月8日，正是黄道吉日"
+            android:textColor="@color/wukong_all_gray"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
